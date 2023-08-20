@@ -174,7 +174,7 @@ list_all_boards -
               ]
 logout - 
     
-    URL - "http://127.0.0.1:8000/logout"
+    URL - "http://127.0.0.1:8000/logout/"
     Type - GET
     Headers - {
               "Authentication" : "Token {token_value}"
