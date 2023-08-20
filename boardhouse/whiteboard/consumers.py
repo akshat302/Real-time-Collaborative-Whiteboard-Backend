@@ -51,7 +51,7 @@ class WhiteBoardConsumer(AsyncWebsocketConsumer):
         ACTIONS = ['start', 'draw-line', 'draw-shape', 'write-text', 'stop', 'undo', 'redo']
         return action in ACTIONS
 
-    # Used @database_sync_to_async so that db operation do bot block the websocket connection
+    # Used @database_sync_to_async so that db operation does bot block the websocket connection
     # One drawback would be that is some error occurs during saving the booard_information it would still continue to broadcast the actions to the connected users.
     # Adding a retry to this method would be a probable solution
     @database_sync_to_async

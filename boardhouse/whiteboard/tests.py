@@ -5,6 +5,7 @@ from django.urls import reverse
 from django.contrib.auth.models import User
 from rest_framework.authtoken.models import Token
 from whiteboard.models import WhiteBoard, UserBoardInformation
+from urllib.parse import urlencode
 
 class WhiteBoardViewsTest(TestCase):
 
@@ -14,7 +15,6 @@ class WhiteBoardViewsTest(TestCase):
         self.login_url = reverse('login') 
         self.create_board_url = reverse('create_whiteboard')
         self.list_all_boards = reverse('list_all_boards')
-        self.list_board = reverse('list_board')
         self.list_all_actions = reverse('list_all_actions')
         self.logout_url = reverse('logout')
 
@@ -100,6 +100,25 @@ class WhiteBoardViewsTest(TestCase):
         response = self.client.get(self.list_all_boards, format='json')
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(len(response.json()), 2)
+
+    def test_board_view(self):
+        user, token = self.create_user_and_token()
+        self.client.credentials(HTTP_AUTHORIZATION='Token ' + token.key)
+
+        board_data = {
+                "name": "notes",
+                "description": "Used for daily notes"
+            }
+  
+        whiteboard = WhiteBoard.objects.create(**board_data)
+        params = {'board_uuid': whiteboard.uuid}
+        params = {
+                    "board_uuid": whiteboard.uuid
+                }
+        encoded_params = urlencode(params)
+        url = f"/list_board/?{encoded_params}"
+        response = self.client.get(url)
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
 
     def test_list_all_actions_view(self):
 
