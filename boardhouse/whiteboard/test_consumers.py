@@ -9,7 +9,7 @@ from channels.db import database_sync_to_async
 
 
 class WhiteBoardConsumerTestCase(TestCase):
-    def set_up_data(self): 
+    def setUp(self): 
         self.user = User.objects.create_user(username='akshat', password='ak@123')
         self.board = WhiteBoard.objects.create(name='my_board', description='Personal Work')
 
