@@ -1,4 +1,6 @@
 # SuperU-Backend
+Documentation Link - https://docs.google.com/document/d/1UPWpaMiDzsTVqB5ZYtbwP2LqJROZRep8OIERwPuxDPw/edit?usp=sharing
+
 ### Requirements
 
 - Django==4.1.3
