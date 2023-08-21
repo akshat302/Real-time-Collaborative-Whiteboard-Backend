@@ -1,6 +1,6 @@
 # SuperU-Backend
 
-### NOTE - In the project you might see two contributors instead of one, this is because I was using my friend's laptop to work on this project and by mistake I have pushed some of the commits using his credentials. Sorry for the confusion, just wanted to affirm that all the work has been done by me.
+### NOTE - IN THE PROJECT YOU MIGHT SEE TWO CONTRIBUTORS INSTEAD OF ONE, THIS IS BECAUSE I WAS USING MY FRIEND’S LAPTOP TO WORK ON THIS PROJECT AND BY MISTAKE I HAVE PUSHED SOME OF THE COMMITS USING HIS CREDENTIALS. SORRY FOR THE CONFUSION, JUST WANTED TO AFFIRM THAT ALL THE WORK HAS BEEN DONE BY ME.
 
 Documentation Link - https://docs.google.com/document/d/1UPWpaMiDzsTVqB5ZYtbwP2LqJROZRep8OIERwPuxDPw/edit?usp=sharing
 
