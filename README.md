@@ -26,7 +26,7 @@ Documentation Link - https://docs.google.com/document/d/1UPWpaMiDzsTVqB5ZYtbwP2L
 2. WhiteBoard
 3. UserBoardInformation
 
-### Database Models
+### Database Models 
 
 UserInformation:
 
