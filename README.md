@@ -20,7 +20,7 @@ Documentation Link - https://docs.google.com/document/d/1UPWpaMiDzsTVqB5ZYtbwP2L
 4. run python manage.py runserver in the terminal to run the server.
 5. To run test corresponding to the API's run `python manage.py test` in the terminal.
 
-### Entities 
+### Entities  
 
 1. User
 2. WhiteBoard
