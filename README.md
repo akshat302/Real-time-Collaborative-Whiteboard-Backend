@@ -15,7 +15,7 @@ Documentation Link - https://docs.google.com/document/d/1UPWpaMiDzsTVqB5ZYtbwP2L
 ### Steps to run
 
 1. clone the github repo - git clone https://github.com/akshat302/Real-time-Collaborative-Whiteboard-Backend.git
-2. cd into the SuperU-Backend folder - cd SuperU-Backend/boardhouse
+2. cd into the SuperU-Backend folder - cd Real-time-Collaborative-Whiteboard-Backend/boardhouse
 3. run python manage.py migrate in the terminal.
 4. run python manage.py runserver in the terminal to run the server.
 5. To run test corresponding to the API's run `python manage.py test` in the terminal.
